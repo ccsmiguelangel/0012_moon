@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+:root {
+  --blue:   #0052c3;
+  --white:  #ffffff;
+  --black:  #222324;
+  --yellow: #ffdb45;
+
+  --font-sans:   'Popins', sans-serif;
+  --font-cursive:   'Rancho', cursive;
+
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-sans);
+}
+
+body {
+  overflow-x: hidden;
+  background: linear-gradient(var(--black),var(--blue));
+  min-height: 100vh;
+}
+
+/* S1 */
+#S1 {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#S1__text {
+  position: absolute;
+  color: var(--white);
+  font-size: 10rem;
+  font-weight: 700;
+  text-align: center;
+  line-height: 0.55em;
+  white-space: nowrap;
+  z-index: 9;
+  letter-spacing: -9.5px;
+}
+
+#S1::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 250px;
+  background: linear-gradient(to top, var(--blue), transparent);
+  z-index: 10;
+}
+
+
+#S1 img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  object-fit: cover;
+}
+
+#road {
+  z-index: 20;
+}
+/* == */
+
+/* S2 */
+#S2 {
+  position: relative;
+  padding: 100px;
+  background: linear-gradient(var(--blue), var(--black));
+}
+
+.S2__h2 {
+  font-size: 3.5em;
+  color: var(--white);
+  margin-bottom: 10px;
+}
+
+.S2__p {
+  font-size: 1em;
+  color: var(--white);
+}
+/* == */
